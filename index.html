@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="张成方，北京化工大学信息科学与技术学院控制科学与工程博士研究生，研究广义波动方程下的面波频散正演与近地表多尺度反演。">
+  <title>张成方 Chengfang Zhang | 面波频散正演与近地表多尺度反演</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar" aria-label="Primary navigation">
+    <a class="logo" href="#top" aria-label="Chengfang Zhang home">
+      <span class="logo-badge">ZC</span>
+      <span class="logo-text">Chengfang Zhang</span>
+    </a>
+    <nav class="menu" aria-label="Site sections">
+      <a href="#about">About</a>
+      <a href="#directions">Research</a>
+      <a href="#thesis">Thesis</a>
+      <a href="#outputs">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="topbar-cta" href="https://github.com/chengfangzhang" target="_blank" rel="noreferrer">GitHub</a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="fieldCanvas" class="hero-bg" aria-hidden="true"></canvas>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Surface-Wave Dispersion · Generalized Wave Equation · Near-Surface Inversion</p>
+          <h1 id="hero-title">张成方｜面波频散正演与近地表多尺度反演</h1>
+          <p class="hero-tagline">控制科学与工程博士研究生 · 地球物理 × 信息科学交叉</p>
+          <p class="hero-summary">
+            我的研究聚焦于广义波动方程框架下的面波频散正演计算，以及面向近地表结构的多尺度反演方法。希望借助信息科学中的建模、优化与计算方法，让面波数据更稳定、更高效地转化为可信的浅地表速度结构。
+          </p>
+          <div class="hero-buttons" aria-label="Page links">
+            <a class="btn btn-accent" href="#about">了解我的研究</a>
+            <a class="btn btn-light" href="#directions">研究方向</a>
+            <a class="btn btn-light" href="#thesis">博士论文</a>
+            <a class="btn btn-outline" href="#contact">联系方式</a>
+          </div>
+        </div>
+
+        <aside class="id-card" aria-label="Researcher profile">
+          <!-- TODO: 换成本人照片，例如 assets/avatar.jpg -->
+          <div class="avatar" role="img" aria-label="头像占位（待补充）">张</div>
+          <div>
+            <p class="id-name">张成方 · Chengfang Zhang</p>
+            <p class="id-role">Ph.D. student · Control Science and Engineering</p>
+          </div>
+          <dl class="id-facts">
+            <div>
+              <dt>Affiliation</dt>
+              <dd>College of Information Science and Technology, Beijing University of Chemical Technology</dd>
+            </div>
+            <div>
+              <dt>Advisor</dt>
+              <dd>邱宪波</dd>
+            </div>
+            <div>
+              <dt>Research</dt>
+              <dd>Surface-wave dispersion · near-surface multiscale inversion</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="banner" aria-label="Research statement">
+      <p>研究主线：以广义波动方程刻画复杂近地表介质，发展面波频散正演方法，并在此基础上构建由粗到细的多尺度反演流程。</p>
+    </section>
+
+    <section id="about" class="block about">
+      <div class="block-head">
+        <p class="eyebrow">About</p>
+        <h2>在地球物理与信息科学的交叉处，研究如何“看清”浅地表。</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <p>
+            我是张成方，北京化工大学信息科学与技术学院控制科学与工程专业博士研究生，导师为邱宪波老师。
+          </p>
+          <p>
+            我的研究方向是地球物理与信息科学的交叉领域。博士论文（暂定）题目为《广义波动方程下面波频散正演与近地表多尺度反演方法研究》，关注面波在复杂近地表介质中的频散特征计算，以及如何利用多尺度策略提升速度结构反演的稳定性与分辨率。
+          </p>
+        </div>
+        <dl class="about-list fade-in">
+          <div>
+            <dt>理论</dt>
+            <dd>广义波动方程、面波传播与频散特征</dd>
+          </div>
+          <div>
+            <dt>正演</dt>
+            <dd>多模式面波频散曲线计算与数值方法</dd>
+          </div>
+          <div>
+            <dt>反演</dt>
+            <dd>近地表横波速度结构的多尺度反演</dd>
+          </div>
+          <div>
+            <dt>交叉</dt>
+            <dd>以建模、优化与计算方法服务地球物理问题</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="directions" class="block">
+      <div class="block-head">
+        <p class="eyebrow">Research Directions</p>
+        <h2>研究沿“方程—正演—反演”三个层次展开。</h2>
+      </div>
+      <div class="cards">
+        <article class="card fade-in">
+          <span class="pill pill-blue">理论基础</span>
+          <h3>广义波动方程</h3>
+          <ul>
+            <li>复杂近地表介质的波动方程描述</li>
+            <li>面波传播机理分析</li>
+            <li>模型假设与适用条件</li>
+          </ul>
+        </article>
+        <article class="card fade-in">
+          <span class="pill pill-teal">正演计算</span>
+          <h3>面波频散正演</h3>
+          <ul>
+            <li>多模式频散曲线求解</li>
+            <li>数值稳定性与计算精度</li>
+            <li>正演效率优化</li>
+          </ul>
+        </article>
+        <article class="card fade-in">
+          <span class="pill pill-amber">结构反演</span>
+          <h3>近地表多尺度反演</h3>
+          <ul>
+            <li>由粗到细的多尺度反演策略</li>
+            <li>横波速度结构重建</li>
+            <li>反演稳定性与分辨率</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="block pipeline-block">
+      <div class="block-head single">
+        <p class="eyebrow">Method Pipeline</p>
+        <h2>从模型到结构的研究流程</h2>
+      </div>
+      <ol class="pipeline fade-in" aria-label="Research steps">
+        <li>介质建模</li>
+        <li>波动方程</li>
+        <li>频散正演</li>
+        <li>频散提取</li>
+        <li>多尺度反演</li>
+        <li>结构解释</li>
+      </ol>
+    </section>
+
+    <section id="thesis" class="figure-band" aria-labelledby="thesis-title">
+      <div class="figure-text fade-in">
+        <p class="eyebrow">Ph.D. Thesis (Tentative)</p>
+        <h2 id="thesis-title">《广义波动方程下面波频散正演与近地表多尺度反演方法研究》</h2>
+        <p>
+          论文以广义波动方程为理论基础，研究面波频散的正演计算方法，并在正演基础上发展近地表多尺度反演方法，形成从理论建模到结构重建的完整技术路线。
+        </p>
+        <p class="note">右图为研究框架概念示意。</p>
+      </div>
+      <figure class="figure-img fade-in">
+        <img src="assets/research-map.svg" alt="广义波动方程、面波频散正演与近地表多尺度反演的研究框架示意图" width="1200" height="680">
+      </figure>
+    </section>
+
+    <section id="outputs" class="block">
+      <div class="block-head">
+        <p class="eyebrow">Education &amp; Publications</p>
+        <h2>教育经历与学术成果</h2>
+      </div>
+      <div class="two-col">
+        <div class="stack timeline fade-in" aria-label="Education timeline">
+          <article class="item">
+            <span>2024 – 至今 / Present</span>
+            <h3>北京化工大学 · 信息科学与技术学院</h3>
+            <p>控制科学与工程 博士研究生（导师：邱宪波）</p>
+            <p class="en">Ph.D. student in Control Science and Engineering, College of Information Science and Technology, Beijing University of Chemical Technology</p>
+          </article>
+          <article class="item">
+            <span>2023 – 2024</span>
+            <h3>北京化工大学 · 信息科学与技术学院</h3>
+            <p>科研助理</p>
+            <p class="en">Research Assistant, College of Information Science and Technology, Beijing University of Chemical Technology</p>
+          </article>
+          <article class="item">
+            <span>2020 – 2023</span>
+            <h3>北京化工大学 · 控制科学与工程</h3>
+            <p>硕士</p>
+            <p class="en">M.Eng. in Control Science and Engineering, Beijing University of Chemical Technology</p>
+          </article>
+          <article class="item">
+            <span>2016 – 2020</span>
+            <h3>北京化工大学 · 自动化专业</h3>
+            <p>本科</p>
+            <p class="en">B.Eng. in Automation, Beijing University of Chemical Technology</p>
+          </article>
+        </div>
+
+        <div class="stack fade-in" aria-label="Publications">
+          <article class="item placeholder">
+            <span>年份 · 期刊/会议 <em class="todo">待补充</em></span>
+            <h3>论文标题 <em class="todo">待补充</em></h3>
+            <p>作者列表 <em class="todo">待补充</em></p>
+            <a href="#outputs">DOI 链接 <em class="todo">待补充</em></a>
+          </article>
+          <article class="item placeholder">
+            <span>年份 · 期刊/会议 <em class="todo">待补充</em></span>
+            <h3>论文标题 <em class="todo">待补充</em></h3>
+            <p>作者列表 <em class="todo">待补充</em></p>
+            <a href="#outputs">DOI 链接 <em class="todo">待补充</em></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="block contact">
+      <div class="contact-text fade-in">
+        <p class="eyebrow">Contact</p>
+        <h2>欢迎交流面波方法、近地表反演与交叉研究。</h2>
+        <p>如果你对面波频散正演、近地表结构反演或地球物理与信息科学的交叉研究感兴趣，欢迎联系我。</p>
+        <p class="contact-meta">Email：<a href="mailto:buctzcf@163.com">buctzcf@163.com</a></p>
+      </div>
+      <div class="contact-buttons fade-in">
+        <a class="btn btn-accent" href="mailto:buctzcf@163.com">Email</a>
+        <!-- TODO: 替换为 ORCID / Google Scholar 链接 -->
+        <a class="btn btn-light" href="#contact" data-todo="ORCID / Google Scholar">Scholar · 待补充</a>
+        <a class="btn btn-outline" href="https://github.com/chengfangzhang" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Chengfang Zhang</span>
+    <span>Surface-wave dispersion, near-surface inversion, geophysics × information science.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
